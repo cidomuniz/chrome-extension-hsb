@@ -1,6 +1,4 @@
-﻿Heat Stream Browser is Copyright (C) 2019 Cido Oliveira <cidoliveiraa@gmail.com>
+Extension made for Google Chrome Heat Stream Browser.
+https://chrome.google.com/webstore/detail/heat-stream-browser/dmgapgjknkpabhnkklocdcpjhicndhod
 
-You are hereby granted a licence to use the software as-is, and view the source code for educational purposes.
-You may not create derivative versions of the software without written permission of the author.
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
-without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+![Heat Stream Browser](image/banner/HSB.png)
