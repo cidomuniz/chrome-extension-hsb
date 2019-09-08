@@ -1,0 +1,22 @@
+{
+    "background": {
+       "scripts": ["js/popper.min.js", "js/jquery-3.3.1.min.js", "js/bootstrap.min.js", "js/background.js", "js/popup.js"],
+       "css": ["css/bootstrap.min.css", "css/style.css", "https://use.fontawesome.com/releases/v5.6.3/css/all.css"]
+    },
+    "browser_action": {
+       "default_icon": "icon/heat/icons8-fire-filled-128.png",
+       "default_popup": "popup.html",
+       "default_title": "Heat Stream Browser"
+    },
+    "description": "Browse and watch Twitch livestreams.",
+    "icons": {
+       "128": "icon/heat/icons8-fire-filled-128.png"
+    },
+    "manifest_version": 2,
+    "name": "Heat Stream Browser",
+    "permissions": ["https://api.twitch.tv/*", "https://www.twitch.tv/*", "https://twitter.com/*", "https://use.fontawesome.com/*"],
+    "version": "1.0.7",
+    "web_accessible_resources": ["icon/heat/icons8-fire-filled-128.png"],
+    "content_security_policy": "script-src 'self' https://api.twitch.tv; object-src 'self'"
+ }
+ 
