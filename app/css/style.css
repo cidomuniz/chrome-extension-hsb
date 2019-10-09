@@ -1,3 +1,14 @@
 body {
     background-color: #18181b;
+    width: 500px;
+}
+
+.navbar-custom {
+    background-color: #2f2f37;
+    height: 50px;
+    border-bottom: 1px solid #000000;
+}
+
+.main-menu {
+    margin-top: 51px;
 }
