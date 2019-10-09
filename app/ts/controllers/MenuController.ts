@@ -1,8 +1,4 @@
-import { MenuView } from '../views/MenuView';
-import { Game } from '../models/Game';
-import { TwitchAPI } from '../helpers/index';
-
-export class MenuController {
+class MenuController {
   private _twitchAPI = new TwitchAPI();
   private _menuView = new MenuView('#menu');
 
@@ -14,9 +10,10 @@ export class MenuController {
     this._twitchAPI.GetTopGames()
       .then((result) => { 
         
+        console.log(result.data);
         this._menuView.update(result.data);
       })
-      .catch(() => { 'error' });
+      .catch(() => { console.log('error') });
   }
 
 }

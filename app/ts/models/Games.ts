@@ -1,4 +1,4 @@
-export class Games {
+class Games {
   private data : Games[];
   
   get Data(){

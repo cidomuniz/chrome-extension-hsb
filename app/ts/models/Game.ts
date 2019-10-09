@@ -1,16 +1,16 @@
-export class Game {
+class Game {
 
-  constructor(private name: string, private id: number, private box_art_url: string) { }
+  constructor(private _name: string, private _id: number, private _box_art_url: string) { }
 
-  get Name() {
-    return this.name;
+  get name() {
+    return this._name;
   }
 
-  get Id() {
-    return this.id;
+  get id() {
+    return this._id;
   }
 
-  get Url() {
-    return this.box_art_url;
+  get box_art_url() {
+    return this._box_art_url;
   };
 }
