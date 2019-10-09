@@ -1,8 +1,20 @@
-class MenuView extends View<string> {
+import { Game } from '../models/index';
+import { View } from './View';
 
-  template(model: string): string {
+export class MenuView extends View<Game[]> {
 
-      return `<p class="alert alert-info">${model}</p>`;
+  template(model: Game[]): string {
+
+    return model.map( game =>
+      `<li class="has-subnav">
+              <a href="#">
+                <img class="menu-image" src="${game.Url.replace('{width}x{height}', '100x80')}" alt="">
+                <span class="nav-text">
+                  ${game.Name}
+                </span>
+              </a>
+            </li>`
+      ).join('') ;
   }
 
 }

@@ -1,14 +1,8 @@
-class Games {
-
-  private _games: Game[] = [];
-
-  adiciona(game: Game): void {
-
-      this._games.push(game);
+export class Games {
+  private data : Games[];
+  
+  get Data(){
+    return this.data;
   }
 
-  paraArray(): Game[] {
-
-      return [].concat(this._games);
-  }
 }

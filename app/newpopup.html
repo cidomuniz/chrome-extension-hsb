@@ -12,23 +12,17 @@
 </head>
 
 <body>
-    <nav class="main-menu">
-        <li class="has-subnav">
-            <a href="#">
-                <img class="menu-image" src="https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-100x80.jpg" alt="">
-                <span class="nav-text">
-                    Dota2
-                </span>
-            </a>
-        </li>
+    <nav class="main-menu" id="menu">
     </nav>
 </body>
 
 <script src="lib/js/jquery-3.3.1.min.js"></script>
 <script src="lib/js/popper.min.js"></script>
 <script src="lib/js/bootstrap.min.js"></script>
-<script src="js/controllers/MenuController.js"></script>
-<script src="js/helpers/TwitchAPI.js"></script>
-<script src="js/app.js"></script>
+<script src="lib/js/system.js"></script>
+<script>
+    System.defaultJSExtensions = true;
+    System.import('js/app.js').catch(err => console.error(err));
+</script>
 
 </html>

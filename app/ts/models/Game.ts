@@ -1,4 +1,4 @@
-class Game {
+export class Game {
 
   constructor(private name: string, private id: number, private box_art_url: string) { }
 

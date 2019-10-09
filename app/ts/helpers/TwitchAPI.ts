@@ -1,4 +1,4 @@
-class TwitchAPI {
+export class TwitchAPI {
 
   private _url: string = 'https://api.twitch.tv/helix';
   private _clientId: string = 'tbr05r7ictx1fditg6mjpn1pdlpup5';
@@ -9,7 +9,7 @@ class TwitchAPI {
 
   }
 
-  async GetTopGames() {
+  async GetTopGames(): Promise<any> {
 
     let ajaxsettings: JQueryAjaxSettings = {
       url: this._url + this._topGames,

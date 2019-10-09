@@ -1,16 +1,20 @@
-class MenuController {
-  private twitchAPI = new TwitchAPI();
-  private _inputData: JQuery;
+import { MenuView } from '../views/MenuView';
+import { Game } from '../models/Game';
+import { TwitchAPI } from '../helpers/index';
+
+export class MenuController {
+  private _twitchAPI = new TwitchAPI();
+  private _menuView = new MenuView('#menu');
 
   constructor(){
 
   }
 
   GetGames(){
-    this.twitchAPI.GetTopGames()
+    this._twitchAPI.GetTopGames()
       .then((result) => { 
         
-        console.log(<Game[]>result.data) 
+        this._menuView.update(result.data);
       })
       .catch(() => { 'error' });
   }
