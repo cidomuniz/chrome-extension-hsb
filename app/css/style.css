@@ -1,6 +1,7 @@
 body {
     background-color: #18181b;
     width: 500px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .navbar-custom {
@@ -9,6 +10,41 @@ body {
     border-bottom: 1px solid #000000;
 }
 
-.main-menu {
+.body-container {
     margin-top: 51px;
+}
+
+.card {
+    background-color: #2f2f37 !important;
+    width: 130px;
+    height: 138px;
+    margin: 1.5px;
+}
+
+.card :hover {
+    background-color: #6e17f0 !important;
+    opacity: 0.92;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-left: 100px;
+}
+
+.card-texto {
+    text-align: center;
+}
+
+.card-nome {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+
+.viewers {
+    color: #e01915;
+    font-weight: normal;
 }

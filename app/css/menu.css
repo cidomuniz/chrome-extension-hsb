@@ -4,9 +4,6 @@
 /*$roxo-tw: #772ce8 !default;
 $preto-menu: #18181b !default;*/
 
-.fa-2x {
-    font-size: 2em;
-}
 
 .menu-image {
     position: relative;
@@ -134,11 +131,4 @@ nav.main-menu li.active>a,
     background: #e2e2e2;
     width: 100%;
     height: 100%;
-}
-
-@font-face {
-    font-family: 'Titillium Web';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
 }
