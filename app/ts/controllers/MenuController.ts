@@ -6,7 +6,15 @@ class MenuController {
   constructor(){
 
   }
-
+  GetFirstGame() {
+    this._twitchService.GetTopGame()
+      .then((result) => { 
+        const game: Game = result.data[0];
+        this.GetStreams(game.id.toString());
+      })
+      .catch(() => { return 'error' });
+  }
+  
   GetGames(){
     this._twitchService.GetTopGames()
       .then((result) => { 
@@ -18,8 +26,6 @@ class MenuController {
   GetStreams(id: string){
     this._twitchService.GetStreams(id)
       .then((result) => { 
-        
-        console.log(result.data);
         this._StreamsView.update(result.data);
       })
       .catch(() => { console.log('error') });

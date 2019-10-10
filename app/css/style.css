@@ -30,6 +30,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
     margin-left: 100px;
 }
 
@@ -41,10 +47,21 @@ body {
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
-    
+}
+
+.menu-nome {
+    color: #ffffff;
+    font-size: 12px;
 }
 
 .viewers {
     color: #e01915;
     font-weight: normal;
+    text-shadow: 0.5px 0.5px #000000;
+}
+
+body.streams {
+    width: 400px;
+    overflow: hidden;
+    height: 100%;
 }

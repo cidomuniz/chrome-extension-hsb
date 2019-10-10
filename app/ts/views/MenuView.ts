@@ -3,7 +3,7 @@ class MenuView extends View<Game[]> {
   template(model: Game[]): string {
     return model.map( game =>
       `<li class="has-subnav">
-              <a href="#"  data-game="${game.id}">
+              <a href="streams.html?game_id=${game.id}" target="streams-container" >
                 <img class="menu-image" src="${game.box_art_url.replace('{width}x{height}', '100x80')}" alt="">
                 <span class="nav-text">
                   ${game.name}
