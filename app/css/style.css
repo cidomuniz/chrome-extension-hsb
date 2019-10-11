@@ -58,6 +58,7 @@ body {
     color: #e01915;
     font-weight: normal;
     text-shadow: 0.5px 0.5px #000000;
+    font-size: 15px;
 }
 
 body.streams {

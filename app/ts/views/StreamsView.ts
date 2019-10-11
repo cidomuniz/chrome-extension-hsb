@@ -2,7 +2,7 @@ class StreamsView extends View<Stream[]> {
 
   template(model: Stream[]): string {
     return model.map( stream =>
-      `<a class="card" href="https://twitch.tv/${stream.user_name}" target="_blank">
+      `<a class="card" href="https://twitch.tv/${stream.user_name}" target="_blank" data-toggle="tooltip" data-placement="top" title="${stream.title}">
         <div class="">
             <img class="card-img-top"
                 src="${stream.thumbnail_url.replace('{width}x{height}', '130x100')}"
