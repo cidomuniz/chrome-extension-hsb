@@ -1,7 +1,8 @@
 class MenuController {
   private _twitchService = new TwitchService();
   private _menuView = new MenuView('#menu');
-  private _StreamsView = new StreamsView('#cards');
+  private _streamsView = new StreamsView('#cards');
+  private _gameView = new GameView('#stream-name');
 
   constructor(){
 
@@ -10,7 +11,7 @@ class MenuController {
     this._twitchService.GetTopGame()
       .then((result) => { 
         const game: Game = result.data[0];
-        this.GetStreams(game.id.toString());
+        this.GetStreams(game.id.toString(), game.name);
       })
       .catch(() => { return 'error' });
   }
@@ -23,10 +24,11 @@ class MenuController {
       .catch(() => { console.log('error') });
   }
 
-  GetStreams(id: string){
+  GetStreams(id: string, gameName: string){
     this._twitchService.GetStreams(id)
       .then((result) => { 
-        this._StreamsView.update(result.data);
+        this._gameView.update(gameName)
+        this._streamsView.update(result.data);
       })
       .catch(() => { console.log('error') });
   }

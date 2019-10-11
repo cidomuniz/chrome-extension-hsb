@@ -57,7 +57,7 @@ body {
 .viewers {
     color: #e01915;
     font-weight: normal;
-    text-shadow: 0.5px 0.5px #000000;
+    text-shadow: 0px 0px 3px #000000;
     font-size: 15px;
 }
 
@@ -65,4 +65,12 @@ body.streams {
     width: 400px;
     overflow: hidden;
     height: 100%;
+}
+
+.stream-name {
+    color: #e01915;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 5px #544e2d;
 }
