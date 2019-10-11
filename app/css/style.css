@@ -74,3 +74,27 @@ body.streams {
     text-align: center;
     text-shadow: 0px 0px 5px #544e2d;
 }
+
+#loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    background-color: #000000;
+    z-index: 99;
+    text-align: center;
+}
+
+#loading-image {
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    z-index: 100;
+}
+
+#loading-image-streams {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 100;
+}

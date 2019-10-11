@@ -13,7 +13,7 @@ class MenuController {
         const game: Game = result.data[0];
         this.GetStreams(game.id.toString(), game.name);
       })
-      .catch(() => { return 'error' });
+      .catch(() => { window.location.replace('error.html') });
   }
   
   GetGames(){
@@ -21,7 +21,7 @@ class MenuController {
       .then((result) => { 
         this._menuView.update(result.data);
       })
-      .catch(() => { console.log('error') });
+      .catch(() => { window.location.replace('error.html') });
   }
 
   GetStreams(id: string, gameName: string){
@@ -30,7 +30,7 @@ class MenuController {
         this._gameView.update(gameName)
         this._streamsView.update(result.data);
       })
-      .catch(() => { console.log('error') });
+      .catch(() => { window.location.replace('error.html') });
   }
 
 }
