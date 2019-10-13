@@ -6,12 +6,12 @@ body {
 
 .navbar-custom {
     background-color: #2f2f37;
-    height: 50px;
+    height: 30px;
     border-bottom: 1px solid #000000;
 }
 
 .body-container {
-    margin-top: 51px;
+    margin-top: 31px;
 }
 
 .card {
@@ -22,7 +22,7 @@ body {
 }
 
 .card :hover {
-    background-color: #6e17f0 !important;
+    background-color: #454545 !important;
     opacity: 0.92;
 }
 
@@ -55,10 +55,10 @@ body {
 }
 
 .viewers {
-    color: #e01915;
+    background-color: #772ce8;
     font-weight: normal;
     text-shadow: 0px 0px 3px #000000;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 body.streams {
@@ -68,33 +68,24 @@ body.streams {
 }
 
 .stream-name {
-    color: #e01915;
+    font-family: 'Suez One', serif;
+    color: #772ce8;
     font-size: 15px;
     font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
-    text-shadow: 0px 0px 5px #544e2d;
+    letter-spacing: 2px;
+    text-shadow: -1px 0 #a978f3, 0 1px #a978f3, 1px 0 #a978f3, 0 -1px #a978f3;
 }
 
-#loading {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: block;
-    background-color: #000000;
-    z-index: 99;
-    text-align: center;
+.nav-icon {
+    color: #772ce8;
+    margin-top: -11px;
+    font-size: 23px;
 }
 
-#loading-image {
-    position: absolute;
-    top: 25%;
-    left: 33%;
-    z-index: 100;
-}
-
-#loading-image-streams {
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    z-index: 100;
+.nav-title-text {
+    color: #772ce8;
+    margin-top: -11px;
+    font-size: 23px;
 }

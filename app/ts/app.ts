@@ -9,5 +9,5 @@ $(document)
     $('#loading').show(0);
   })
   .ajaxStop(function () {
-    $('#loading').delay(2000).hide(0);
+    $('#loading').delay(500).hide(0);
   });
