@@ -11,7 +11,7 @@
     "manifest_version": 2,
     "name": "Heat Stream Browser",
     "permissions": ["https://api.twitch.tv/*", "https://www.twitch.tv/*", "https://twitter.com/*", "https://use.fontawesome.com/*"],
-    "version": "1.0.7",
+    "version": "2.0.0",
     "web_accessible_resources": ["app/icon/heat/icons8-fire-filled-128.png"],
     "content_security_policy": "script-src 'self' https://api.twitch.tv; object-src 'self'"
 }
